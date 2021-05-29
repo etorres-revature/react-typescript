@@ -30,7 +30,10 @@ hobbies = ["sports", "cooking"];
 
 hobbies.push(12);
 
-let person: {name: string, age: number}; //object typing
+//type definition/alias 
+type Person = {name: string, age: number}
+
+let person: Person //{name: string, age: number}; object typing
 
 person = {
   name: "Max",
@@ -41,9 +44,10 @@ person = {
   isEmployee: true;
 }
 
-let people: {
+let people: Person
+/*{
   name: string, age: number
-}[] // array of objects...
+}[] array of objects... */
 
 //type inference ...
 let course = "react - the complete guide";
@@ -54,3 +58,5 @@ course = 12345;
 let courses: string | number = "react- the complete guide"
 
 courses = 12345
+
+
