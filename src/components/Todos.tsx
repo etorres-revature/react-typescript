@@ -5,7 +5,9 @@ import TodoItem from "./TodoItem";
 const Todos: React.FC<{ todos: Todo[] }> = (props) => {
   return (
     <ul>
-      <TodoItem todos={props.todos} />
+      {props.todos.map((todo) => {
+        return <TodoItem key={todo.id} text={todo.text} />;
+      })}
     </ul>
   );
 };
