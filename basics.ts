@@ -2,6 +2,7 @@
 //more complex types: arrays, objects
 //function types, parameters
 //have null and undefined types
+//falback type is any
 
 //primitives
 
@@ -20,3 +21,26 @@ userName = false;
 let isUsingTS: boolean;
 
 isUsingTS = true;
+
+//more complex types
+
+let hobbies: string[]; //an array of strings
+
+hobbies = ["sports", "cooking"];
+
+hobbies.push(12);
+
+let person: {name: string, age: number}; //object typing
+
+person = {
+  name: "Max",
+  age: 32,
+};
+
+person = {
+  isEmployee: true;
+}
+
+let people: {
+  name: string, age: number
+}
