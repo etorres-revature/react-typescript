@@ -43,4 +43,14 @@ person = {
 
 let people: {
   name: string, age: number
-}
+}[] // array of objects...
+
+//type inference ...
+let course = "react - the complete guide";
+
+course = 12345;
+
+//union types
+let courses: string | number = "react- the complete guide"
+
+courses = 12345
